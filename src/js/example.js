@@ -1,6 +1,10 @@
 import Appsignal from '@appsignal/javascript'
+import { plugin as pluginBreadcrumbsNetwork } from "@appsignal/plugin-breadcrumbs-network"
+import { plugin as pluginBreadcrumbsConsole } from "@appsignal/plugin-breadcrumbs-console"
 
 const appsignal = new Appsignal({ key: 'YOUR-FRONTEND-API-KEY' })
+appsignal.use(pluginBreadcrumbsNetwork)
+appsignal.use(pluginBreadcrumbsConsole)
 
 export const example = () => `Hello World.`
 
