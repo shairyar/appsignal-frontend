@@ -1,6 +1,6 @@
 import Appsignal from '@appsignal/javascript'
 
-const appsignal = new Appsignal({ key: 'e698508b-77e6-4da2-88ac-713e52343d6b' })
+const appsignal = new Appsignal({ key: 'FRONT-END-API-KEY' })
 
 export const example = () => `Hello World.`
 
